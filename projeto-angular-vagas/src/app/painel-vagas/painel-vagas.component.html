@@ -1,0 +1,47 @@
+<div class="container">
+  <form>
+    <h2>Cadastrar</h2><br>
+
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" name="id" [(ngModel)]="vaga.id" placeholder="Ex. 10">
+      <label for="floatingInput">Id</label>
+    </div>
+    <div class="form-floating">
+      <input type="text" class="form-control" name="nome" [(ngModel)]="vaga.nome" placeholder="Ex. Nome">
+      <label for="floatingInput">Nome</label>
+    </div><br>
+    <div class="form-floating">
+      <input type="text" class="form-control" name="foto" [(ngModel)]="vaga.foto" placeholder="Ex. Foto">
+      <label for="floatingInput">Foto</label>
+    </div><br>
+    <div class="form-floating">
+      <input type="text" class="form-control" name="descricao" [(ngModel)]="vaga.descricao"
+        placeholder="Ex. Vaga para trabalhar de pintor">
+      <label for="floatingInput">Descrição</label>
+    </div><br>
+    <div class="form-floating">
+      <input type="text" class="form-control" name="salario" [(ngModel)]="vaga.salario" placeholder="Ex. 1200">
+      <label for="floatingInput">Salario</label>
+    </div><br>
+ 
+    <button type="button" class="btn btn-primary"(click)="cadastrar()"><a routerLink="mural-vagas" target="_blank" rel="noopener noreferrer"></a> Cadastrar Vaga</button>
+    <button type="button" class="btn btn-success"(click)="atualizar(vaga.id)">Atualizar Vaga</button>
+    <button type="button" class="btn btn-danger" (click)="excluir(vaga.id)">Excluir Vaga</button>
+  </form>
+
+</div>
+
+<section class="listar-vagas">
+  <div class="cardsc" *ngFor="let vagas of vagas">
+    <div class="card" style="width: 18rem;">
+      <img src="assets/img/vagas/{{vagas.foto }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Codigo da vaga : {{vagas.id}}</h5>
+        <h5 class="card-title">Vaga : {{vagas.nome}}</h5>
+        <p class="card-text">Descrição : {{vagas.descricao}}</p>
+        <p class="card-text">Salario : R${{vagas.salario}},00</p>
+      </div>
+      <button type="button" class="btn btn-primary">Se cadastar</button>
+    </div>
+  </div>
+</section>

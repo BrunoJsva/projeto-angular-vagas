@@ -1,0 +1,23 @@
+.listar-vagas{
+    display: flex;
+    flex-direction: row;
+}
+.listar-vagas .card{
+    margin: 30% auto;
+}
+
+.cardsc{
+    margin: 0 auto;
+}
+.container{
+    width: 800px;
+    margin-top: 2%;
+    align-items: center;
+    text-align: center;
+}
+
+button{
+    display: inline-block;
+    margin: 20px;
+    
+}

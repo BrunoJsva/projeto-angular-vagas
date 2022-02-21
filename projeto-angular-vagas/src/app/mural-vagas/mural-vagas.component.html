@@ -1,0 +1,14 @@
+<section class="listar-vagas">
+  <div class="cardsc" *ngFor="let vagas of vagas">
+    <div class="card" style="width: 18rem;">
+      <img src="assets/img/vagas/{{vagas.foto }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Codigo da vaga : {{vagas.id}}</h5>
+        <h5 class="card-title">Vaga : {{vagas.nome}}</h5>
+        <p class="card-text">Descrição : {{vagas.descricao}}</p>
+        <p class="card-text">Salario : R${{vagas.salario}},00</p>
+      </div>
+      <button type="button" class="btn btn-primary">Se cadastar</button>
+    </div>
+  </div>
+</section>

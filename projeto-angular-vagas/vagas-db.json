@@ -1,0 +1,25 @@
+{
+  "vagas": [
+    {
+      "id": 1,
+      "nome": "Desenvolvedor Front-End",
+      "foto": "foto1.jpg",
+      "descricao": "Trabalhar com Angular",
+      "salario": 5000
+    },
+    {
+      "id": 2,
+      "nome": "Desenvolvedor Front-End",
+      "foto": "foto2.jpg",
+      "descriscao": "Trabalhar com AdobeXD",
+      "salario": 6000
+    },
+    {
+      "id": 3,
+      "nome": "Desenvolvedor Back-End",
+      "foto": "foto3.jpg",
+      "descriscao": "Trabalhar com Java e Spring-Boot",
+      "salario": 7000
+    }
+  ]
+}
